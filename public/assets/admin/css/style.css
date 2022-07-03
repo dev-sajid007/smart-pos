@@ -1,0 +1,72 @@
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.add_asterisk label.control-label:after {
+    content: " *";
+    color: red;
+
+}
+
+.select2 {
+    width: 100% !important;
+}
+
+.addRow {
+    cursor: pointer;
+}
+
+.no-spacing tr > td {
+    margin: 0.2 !important;
+    padding: 0.2em !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.noHover {
+    pointer-events: none !important;
+}
+
+.no-border {
+    border: none;
+}
+
+.btn .icon, .btn .fa {
+    font-size: 13px;
+     margin-right: 0px;
+}
+.btn-sm, .btn-group-sm > .btn {
+    padding: 2px 6px;
+    font-size: 0.765625rem;
+}
+.form-control {
+    height: 33px;
+}
+
+.input-group-append {
+    height: 33px;
+}
+
+.select2-selection__rendered {
+    line-height: 33px !important;
+}
+.select2-container .select2-selection--single {
+    height: 33px !important;
+}
+.select2-selection__arrow {
+    height: 33px !important;
+}
+
+@media print{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
